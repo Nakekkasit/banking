@@ -8,6 +8,15 @@
   box-sizing: border-box;
 }
 
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-ibm-plex-serif: "IBM Plex Serif", serif;
+}
+
+body {
+  font-family: var(--font-inter);
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
@@ -44,6 +53,14 @@
 }
 
 @layer utilities {
+  .font-inter {
+    font-family: var(--font-inter);
+  }
+
+  .font-ibm-plex-serif {
+    font-family: var(--font-ibm-plex-serif);
+  }
+
   .input-class {
     @apply text-16 placeholder:text-16 rounded-lg border border-gray-300 text-gray-900 placeholder:text-gray-500;
   }
